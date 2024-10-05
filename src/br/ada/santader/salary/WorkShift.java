@@ -34,7 +34,7 @@ public class WorkShift {
 
     public BigDecimal hourlyRate() {
         if (start.getDayOfWeek() == DayOfWeek.SATURDAY
-                || start.getDayOfWeek() == DayOfWeek.MONDAY) {
+                || start.getDayOfWeek() == DayOfWeek.SUNDAY) {
             return hourlyRate.multiply(BigDecimal.valueOf(1.20));
         } else {
             return hourlyRate;
